@@ -119,5 +119,15 @@ namespace SaudPongXNA.ui
             spriteBatch.Draw(texture, position, Color.White);
         }
         #endregion
+
+        public float getPosition()
+        {
+            return position.Y;
+        }
+
+        public void setPosition(float x)
+        {
+            position.Y = x;
+        }
     }
 }

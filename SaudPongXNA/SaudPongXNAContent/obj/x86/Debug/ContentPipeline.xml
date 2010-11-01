@@ -2,31 +2,22 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>circle.png</Source>
-      <Name>circle</Name>
+      <Source>ball.png</Source>
+      <Name>ball</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\circle.xnb</Output>
-      <Time>2010-10-31T20:11:56.3939675-04:00</Time>
+      <Output>C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb</Output>
+      <Time>2010-10-31T20:51:12.9083161-04:00</Time>
     </Item>
     <Item>
-      <Source>mario.png</Source>
-      <Name>mario</Name>
+      <Source>stick1.png</Source>
+      <Name>stick1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\mario.xnb</Output>
-      <Time>2010-10-31T20:11:56.4049697-04:00</Time>
-    </Item>
-    <Item>
-      <Source>star.png</Source>
-      <Name>star</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\star.xnb</Output>
-      <Time>2010-10-31T20:11:56.4179723-04:00</Time>
+      <Output>C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb</Output>
+      <Time>2010-10-31T20:48:02.8304655-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

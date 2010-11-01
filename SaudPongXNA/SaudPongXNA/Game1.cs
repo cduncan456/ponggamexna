@@ -23,6 +23,8 @@ namespace SaudPongXNA
         #region Fields
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Sprite paddle1;
+        Sprite paddle2;
         #endregion
 
 
@@ -54,13 +56,12 @@ namespace SaudPongXNA
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: Add your initialization logic here
-            Components.Add(new Sprite(this, "circle", spriteBatch, Vector2.Zero,
-                new Vector2(200f, 65f)));
-            Components.Add(new Sprite(this, "star", spriteBatch, new Vector2(100, 100),
-                new Vector2(-50f, 165f)));
-            Components.Add(new Sprite(this, "mario", spriteBatch, new Vector2(400f, 300f),
-                new Vector2(-100f, 0f)));
-
+            Components.Add(new Sprite(this, "ball", spriteBatch, Vector2.Zero,
+                new Vector2(150f, 150f)));
+            paddle1 = new Sprite(this, "stick1", spriteBatch, new Vector2(10,0));
+            Components.Add(paddle1);
+            paddle2 = new Sprite(this, "stick1", spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width - 22, 150));
+            Components.Add(paddle2);
             base.Initialize();
         }
 
@@ -95,6 +96,25 @@ namespace SaudPongXNA
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            KeyboardState currentKey = Keyboard.GetState();
+            if (currentKey.IsKeyDown(Keys.A))
+            {
+                paddle1.setPosition(paddle1.getPosition() - 5);
+            }
+            else if (currentKey.IsKeyDown(Keys.Z))
+            {
+                paddle1.setPosition(paddle1.getPosition() + 5);
+            }
+
+            if (currentKey.IsKeyDown(Keys.Up))
+            {
+                paddle2.setPosition(paddle2.getPosition() - 5);
+            }
+            else if (currentKey.IsKeyDown(Keys.Down))
+            {
+                paddle2.setPosition(paddle2.getPosition() + 5);
+            }
+
             // TODO: Add your update logic here (comment left for context)
 
             base.Update(gameTime);
@@ -106,7 +126,7 @@ namespace SaudPongXNA
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.WhiteSmoke);
 
             // TODO: Add your drawing code here (comment left for context)
 

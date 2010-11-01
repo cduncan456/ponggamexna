@@ -4,6 +4,5 @@ C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Deb
 C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
 C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\circle.xnb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\mario.xnb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\star.xnb
+C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb
+C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb
