@@ -23,8 +23,7 @@ namespace SaudPongXNA
         #region Fields
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Sprite paddle1;
-        Sprite paddle2;
+        Sprite paddle1, paddle2, pongball;
         #endregion
 
 
@@ -56,8 +55,8 @@ namespace SaudPongXNA
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: Add your initialization logic here
-            Components.Add(new Sprite(this, "ball", spriteBatch, Vector2.Zero,
-                new Vector2(150f, 150f)));
+            pongball = new Sprite(this, "ball", spriteBatch, new Vector2(140,0) ,new Vector2(150f, 150f));
+            Components.Add(pongball);
             paddle1 = new Sprite(this, "stick1", spriteBatch, new Vector2(10,0));
             Components.Add(paddle1);
             paddle2 = new Sprite(this, "stick1", spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width - 22, 150));
@@ -99,20 +98,47 @@ namespace SaudPongXNA
             KeyboardState currentKey = Keyboard.GetState();
             if (currentKey.IsKeyDown(Keys.A))
             {
-                paddle1.setPosition(paddle1.getPosition() - 5);
+                paddle1.setPositionY(paddle1.getPositionY() - 5);
             }
             else if (currentKey.IsKeyDown(Keys.Z))
             {
-                paddle1.setPosition(paddle1.getPosition() + 5);
+                paddle1.setPositionY(paddle1.getPositionY() + 5);
             }
 
             if (currentKey.IsKeyDown(Keys.Up))
             {
-                paddle2.setPosition(paddle2.getPosition() - 5);
+                paddle2.setPositionY(paddle2.getPositionY() - 5);
             }
             else if (currentKey.IsKeyDown(Keys.Down))
             {
-                paddle2.setPosition(paddle2.getPosition() + 5);
+                paddle2.setPositionY(paddle2.getPositionY() + 5);
+            }
+
+            int maximumX = graphics.GraphicsDevice.Viewport.Width - 22;
+
+            if (pongball.getPositionX() > maximumX)
+            {
+                pongball.setPositionY(0);
+            }
+
+            if (pongball.getPositionX() < 10)
+            {
+                pongball.setPositionY(0);
+            }
+
+            Rectangle pongRect = new Rectangle((int)pongball.getPositionX(), (int) pongball.getPositionY(),13,13);
+            Rectangle pad1Rect = new Rectangle((int)paddle1.getPositionX(), (int)paddle1.getPositionY(), 12, 65);
+            Rectangle pad2Rect = new Rectangle((int)paddle2.getPositionX(), (int)paddle2.getPositionY(), 12, 65);
+
+
+            if (pongRect.Intersects(pad1Rect))
+            {
+                pongball.setVelocityX(pongball.getVelocityX() * -1);
+            }
+
+            if (pongRect.Intersects(pad2Rect))
+            {
+                pongball.setVelocityX(pongball.getVelocityX() * -1);
             }
 
             // TODO: Add your update logic here (comment left for context)

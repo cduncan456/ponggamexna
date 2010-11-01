@@ -120,14 +120,39 @@ namespace SaudPongXNA.ui
         }
         #endregion
 
-        public float getPosition()
+        public float getPositionY()
         {
             return position.Y;
         }
 
-        public void setPosition(float x)
+        public void setPositionY(float y)
         {
-            position.Y = x;
+            position.Y = y;
+        }
+
+        public float getPositionX()
+        {
+            return position.X;
+        }
+
+        public void setVelocityX(float x)
+        {
+            velocity.X = x;
+        }
+
+        public float getVelocityX()
+        {
+            return velocity.X;
+        }
+
+        public void setVelocityY(float y)
+        {
+            velocity.Y = y;
+        }
+
+        public float getVelocityY()
+        {
+            return velocity.Y;
         }
     }
 }
