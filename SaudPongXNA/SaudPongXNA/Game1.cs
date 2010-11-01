@@ -96,11 +96,11 @@ namespace SaudPongXNA
                 this.Exit();
 
             KeyboardState currentKey = Keyboard.GetState();
-            if (currentKey.IsKeyDown(Keys.A))
+            if (currentKey.IsKeyDown(Keys.W))
             {
                 paddle1.setPositionY(paddle1.getPositionY() - 5);
             }
-            else if (currentKey.IsKeyDown(Keys.Z))
+            else if (currentKey.IsKeyDown(Keys.S))
             {
                 paddle1.setPositionY(paddle1.getPositionY() + 5);
             }
