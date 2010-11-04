@@ -16,6 +16,10 @@ namespace SaudPongXNA
     /// Pong Game XNA
     /// 
     /// Author: Saud Malik 
+    /// Author: Caleb Duncan
+    /// Author: Vincent Wilson
+    /// Author: Charod Lakes
+    /// Author: Sedrick Strozier
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
@@ -25,11 +29,10 @@ namespace SaudPongXNA
         SpriteBatch spriteBatch;
         Sprite paddle1, paddle2, pongball;
         SpriteFont font1;
-        SpriteFont font2;
         Vector2 FontPos;
         Vector2 FontPos2;
-        int score1;
-        int score2;
+        int score1 = 0;
+        int score2 = 0;
         #endregion
 
 
@@ -79,7 +82,6 @@ namespace SaudPongXNA
             // TODO: use this.Content to load your game content here
             // method left for context
             font1 = Content.Load<SpriteFont>("SpriteFont1");
-            font2 = Content.Load<SpriteFont>("SpriteFont1");
             FontPos = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) - 20f, 25);
             FontPos2 = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) + 20f, 25);
 
@@ -109,50 +111,52 @@ namespace SaudPongXNA
             KeyboardState currentKey = Keyboard.GetState();
             if (currentKey.IsKeyDown(Keys.W))
             {
-                paddle1.setPositionY(paddle1.getPositionY() - 5);
+                paddle1.Position += new Vector2(0, -5);
             }
             else if (currentKey.IsKeyDown(Keys.S))
             {
-                paddle1.setPositionY(paddle1.getPositionY() + 5);
+                paddle1.Position += new Vector2(0, 5);
             }
 
             if (currentKey.IsKeyDown(Keys.Up))
             {
-                paddle2.setPositionY(paddle2.getPositionY() - 5);
+                paddle2.Position += new Vector2(0, -5);
             }
             else if (currentKey.IsKeyDown(Keys.Down))
             {
-                paddle2.setPositionY(paddle2.getPositionY() + 5);
+                paddle2.Position += new Vector2(0, 5);
             }
 
             int maximumX = graphics.GraphicsDevice.Viewport.Width - 22;
 
-            if (pongball.getPositionX() > maximumX)
+            if (pongball.Position.X > maximumX)
             {
-                pongball.setPositionY(0);
+                pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
                 score1++;
-                base.Update(gameTime);
+                pongball.Velocity = new Vector2(150f, 150f);   
             }
 
-            if (pongball.getPositionX() < 10)
+            if (pongball.Position.X < 10)
             {
-                pongball.setPositionY(0);
+                pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
                 score2++;
+                pongball.Velocity = new Vector2(150f, 150f); 
             }
 
-            Rectangle pongRect = new Rectangle((int)pongball.getPositionX(), (int) pongball.getPositionY(),13,13);
-            Rectangle pad1Rect = new Rectangle((int)paddle1.getPositionX(), (int)paddle1.getPositionY(), 12, 65);
-            Rectangle pad2Rect = new Rectangle((int)paddle2.getPositionX(), (int)paddle2.getPositionY(), 12, 65);
+            Rectangle pongRect = new Rectangle((int)pongball.Position.X, (int) pongball.Position.Y,13,13);
+            Rectangle pad1Rect = new Rectangle((int)paddle1.Position.X, (int)paddle1.Position.Y, 12, 65);
+            Rectangle pad2Rect = new Rectangle((int)paddle2.Position.X, (int)paddle2.Position.Y, 12, 65);
 
 
             if (pongRect.Intersects(pad1Rect))
             {
-                pongball.setVelocityX(pongball.getVelocityX() * -1);
+                pongball.Velocity *= new Vector2(-1.2f, 1.2f);               
+
             }
 
             if (pongRect.Intersects(pad2Rect))
             {
-                pongball.setVelocityX(pongball.getVelocityX() * -1);
+                pongball.Velocity *= new Vector2(-1.2f, 1.2f);
             }
 
             // TODO: Add your update logic here (comment left for context)
@@ -172,13 +176,11 @@ namespace SaudPongXNA
 
             // Draw the sprites.
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            score1 = 0;
-            score2 = 0;
             string output = score1.ToString();
             string output2 = score2.ToString();
             Vector2 FontOrigin = font1.MeasureString(output) / 2;
             spriteBatch.DrawString(font1, output, FontPos, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
-            spriteBatch.DrawString(font2, output2, FontPos2, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
+            spriteBatch.DrawString(font1, output2, FontPos2, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
 
 
             // ensure game components' Draw methods get called between the SpriteBatch

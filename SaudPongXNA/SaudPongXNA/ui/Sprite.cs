@@ -119,40 +119,19 @@ namespace SaudPongXNA.ui
             spriteBatch.Draw(texture, position, Color.White);
         }
         #endregion
+        
 
-        public float getPositionY()
+        public Vector2 Position
         {
-            return position.Y;
+            get { return position; }
+            set { position = value; }
+           
         }
 
-        public void setPositionY(float y)
+        public Vector2 Velocity
         {
-            position.Y = y;
-        }
-
-        public float getPositionX()
-        {
-            return position.X;
-        }
-
-        public void setVelocityX(float x)
-        {
-            velocity.X = x;
-        }
-
-        public float getVelocityX()
-        {
-            return velocity.X;
-        }
-
-        public void setVelocityY(float y)
-        {
-            velocity.Y = y;
-        }
-
-        public float getVelocityY()
-        {
-            return velocity.Y;
-        }
+            get { return velocity; }
+            set { velocity = value; }
+        }       
     }
 }
