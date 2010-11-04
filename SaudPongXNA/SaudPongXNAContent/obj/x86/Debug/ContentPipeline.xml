@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb</Output>
-      <Time>2010-11-04T11:04:42.3425816-04:00</Time>
+      <Output>C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb</Output>
+      <Time>2010-11-04T17:04:23.2664262-04:00</Time>
     </Item>
     <Item>
       <Source>stick1.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb</Output>
-      <Time>2010-11-04T11:04:42.3581813-04:00</Time>
+      <Output>C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb</Output>
+      <Time>2010-11-04T17:04:23.2820158-04:00</Time>
     </Item>
     <Item>
       <Source>SpriteFont1.spritefont</Source>
@@ -25,8 +25,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
-      <Time>2010-11-04T11:40:24.4522048-04:00</Time>
+      <Output>C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2010-11-04T17:04:23.2664262-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -34,10 +34,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNAContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNA\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNAContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

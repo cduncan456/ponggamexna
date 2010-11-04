@@ -61,7 +61,7 @@ namespace SaudPongXNA
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: Add your initialization logic here
-            pongball = new Sprite(this, "ball", spriteBatch, new Vector2(140,0) ,new Vector2(150f, 150f));
+            pongball = new Sprite(this, "ball", spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2), new Vector2(150f, 150f));
             Components.Add(pongball);
             paddle1 = new Sprite(this, "stick1", spriteBatch, new Vector2(10,0));
             Components.Add(paddle1);
@@ -131,6 +131,7 @@ namespace SaudPongXNA
             {
                 pongball.setPositionY(0);
                 score1++;
+                base.Update(gameTime);
             }
 
             if (pongball.getPositionX() < 10)

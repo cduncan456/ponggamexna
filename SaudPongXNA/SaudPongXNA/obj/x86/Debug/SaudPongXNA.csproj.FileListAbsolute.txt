@@ -23,3 +23,12 @@ C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAsse
 C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
 C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
+C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb
+C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb
+C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.exe
+C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.pdb
+C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
+C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
