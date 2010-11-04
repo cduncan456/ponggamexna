@@ -24,6 +24,12 @@ namespace SaudPongXNA
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Sprite paddle1, paddle2, pongball;
+        SpriteFont font1;
+        SpriteFont font2;
+        Vector2 FontPos;
+        Vector2 FontPos2;
+        int score1;
+        int score2;
         #endregion
 
 
@@ -72,6 +78,11 @@ namespace SaudPongXNA
         {
             // TODO: use this.Content to load your game content here
             // method left for context
+            font1 = Content.Load<SpriteFont>("SpriteFont1");
+            font2 = Content.Load<SpriteFont>("SpriteFont1");
+            FontPos = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) - 20f, 25);
+            FontPos2 = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) + 20f, 25);
+
         }
 
         /// <summary>
@@ -119,11 +130,13 @@ namespace SaudPongXNA
             if (pongball.getPositionX() > maximumX)
             {
                 pongball.setPositionY(0);
+                score1++;
             }
 
             if (pongball.getPositionX() < 10)
             {
                 pongball.setPositionY(0);
+                score2++;
             }
 
             Rectangle pongRect = new Rectangle((int)pongball.getPositionX(), (int) pongball.getPositionY(),13,13);
@@ -158,6 +171,14 @@ namespace SaudPongXNA
 
             // Draw the sprites.
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+            score1 = 0;
+            score2 = 0;
+            string output = score1.ToString();
+            string output2 = score2.ToString();
+            Vector2 FontOrigin = font1.MeasureString(output) / 2;
+            spriteBatch.DrawString(font1, output, FontPos, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
+            spriteBatch.DrawString(font2, output2, FontPos2, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
+
 
             // ensure game components' Draw methods get called between the SpriteBatch
             // Begin and End
