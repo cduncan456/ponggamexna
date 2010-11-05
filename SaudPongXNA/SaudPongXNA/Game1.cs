@@ -33,6 +33,8 @@ namespace SaudPongXNA
         Vector2 FontPos2;
         int score1 = 0;
         int score2 = 0;
+        SoundEffect applause, groundBounce, paddleBounce;
+        
         #endregion
 
 
@@ -62,7 +64,7 @@ namespace SaudPongXNA
             // our components need a reference to this SpriteBatch, create it here 
             // instead of in LoadContent.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            
             // TODO: Add your initialization logic here
             pongball = new Sprite(this, "ball", spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2), new Vector2(150f, 150f));
             Components.Add(pongball);
@@ -80,10 +82,12 @@ namespace SaudPongXNA
         protected override void LoadContent()
         {
             // TODO: use this.Content to load your game content here
+            SoundManager.Initialize(Content);
             // method left for context
             font1 = Content.Load<SpriteFont>("SpriteFont1");
             FontPos = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) - 20f, 25);
             FontPos2 = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) + 20f, 25);
+            
 
         }
 
@@ -104,6 +108,9 @@ namespace SaudPongXNA
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            applause = Content.Load<SoundEffect>(@"Sounds/applause");
+            paddleBounce = Content.Load<SoundEffect>(@"Sounds/paddleBounce");
+            groundBounce = Content.Load<SoundEffect>(@"Sounds/groundBounce");
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
@@ -133,14 +140,18 @@ namespace SaudPongXNA
             {
                 pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
                 score1++;
-                pongball.Velocity = new Vector2(-150f, 150f);   
+                pongball.Velocity = new Vector2(-150f, 150f);
+                //play the applause effect when the ball hits the bounds
+                applause.Play();
             }
 
             if (pongball.Position.X < 10)
             {
                 pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
                 score2++;
-                pongball.Velocity = new Vector2(150f, 150f); 
+                pongball.Velocity = new Vector2(150f, 150f);
+                //play the applause effect when the ball hits the bounds
+                applause.Play();
             }
 
             Rectangle pongRect = new Rectangle((int)pongball.Position.X, (int) pongball.Position.Y,13,13);
@@ -150,13 +161,17 @@ namespace SaudPongXNA
 
             if (pongRect.Intersects(pad1Rect))
             {
-                pongball.Velocity *= new Vector2(-1.2f, 1.2f);               
+                paddleBounce.Play();
+                pongball.Velocity *= new Vector2(-1.2f, 1.2f);
+                
 
             }
 
             if (pongRect.Intersects(pad2Rect))
             {
+                paddleBounce.Play();
                 pongball.Velocity *= new Vector2(-1.2f, 1.2f);
+                
             }
 
             // TODO: Add your update logic here (comment left for context)
