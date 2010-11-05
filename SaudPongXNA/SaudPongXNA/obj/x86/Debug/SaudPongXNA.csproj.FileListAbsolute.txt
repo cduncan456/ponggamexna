@@ -14,38 +14,6 @@ U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAssemblyReference.ca
 U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
 U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.exe
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.pdb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb
-U:\XNA Project\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb
-U:\XNA Project\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb
-U:\XNA Project\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.exe
-U:\XNA Project\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.pdb
-U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAssemblyReference.cache
-U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
-U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.exe
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.pdb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb
-C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb
-U:\XNA Project\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb
-U:\XNA Project\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb
-U:\XNA Project\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.exe
-U:\XNA Project\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.pdb
-U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAssemblyReference.cache
-U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
-U:\XNA Project\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
@@ -64,3 +32,12 @@ C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAsse
 C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
 C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
+U:\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+U:\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
+U:\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb
+U:\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb
+U:\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\SpriteFont1.xnb
+U:\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.exe
+U:\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.pdb
+U:\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
