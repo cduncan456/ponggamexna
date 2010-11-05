@@ -10,9 +10,9 @@ namespace SaudPongXNA.ui
     class Paddle
     {
         private Sprite paddle;
-        public Paddle(Game game, SpriteBatch spriteBatch, string paddleName)
+        public Paddle(Game game, SpriteBatch spriteBatch, string paddleName, float xPosition, float yPosition)
         {
-            paddle = new Sprite(game, paddleName, spriteBatch, new Vector2(10, 0));
+            paddle = new Sprite(game, paddleName, spriteBatch, new Vector2(xPosition, yPosition));
         }
 
         public Sprite GetPaddle()
