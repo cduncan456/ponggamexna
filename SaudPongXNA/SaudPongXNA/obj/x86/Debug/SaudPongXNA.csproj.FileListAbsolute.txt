@@ -50,3 +50,6 @@ C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\ob
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\applause.xnb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\groundBounce.xnb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\paddleBounce.xnb

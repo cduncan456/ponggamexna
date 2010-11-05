@@ -28,6 +28,33 @@
       <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
       <Time>2010-11-05T17:00:00.3671558-04:00</Time>
     </Item>
+    <Item>
+      <Source>Sounds\applause.WAV</Source>
+      <Name>Sounds\applause</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\applause.xnb</Output>
+      <Time>2010-11-05T17:32:28.9326073-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\groundBounce.wav</Source>
+      <Name>Sounds\groundBounce</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\groundBounce.xnb</Output>
+      <Time>2010-11-05T17:22:43.8541428-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\paddleBounce.wav</Source>
+      <Name>Sounds\paddleBounce</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\paddleBounce.xnb</Output>
+      <Time>2010-11-05T17:22:48.3854019-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
