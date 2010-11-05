@@ -1,2 +1,3 @@
 C:\Users\smalik2\Desktop\PongXNA\SaudPongXNA\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\ResolveAssemblyReference.cache
 U:\XNA Project\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\ResolveAssemblyReference.cache
