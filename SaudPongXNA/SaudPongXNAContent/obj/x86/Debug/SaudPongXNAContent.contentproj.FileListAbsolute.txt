@@ -3,3 +3,4 @@ U:\XNA Project\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\ResolveAssemblyRefer
 C:\Users\vwilson1\Desktop\pong\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\cduncan4\Desktop\Pong\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\ResolveAssemblyReference.cache
 U:\Pong\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\ResolveAssemblyReference.cache
