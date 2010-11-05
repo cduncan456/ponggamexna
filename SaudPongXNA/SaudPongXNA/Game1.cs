@@ -58,8 +58,8 @@ namespace SaudPongXNA
             // our components need a reference to this SpriteBatch, create it here 
             // instead of in LoadContent.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            player1Paddle = new Paddle(this, spriteBatch, "stick1");
-            player2Paddle = new Paddle(this, spriteBatch, "stick1");
+            player1Paddle = new Paddle(this, spriteBatch, "stick1",10, 0);
+            player2Paddle = new Paddle(this, spriteBatch, "stick1", graphics.GraphicsDevice.Viewport.Width - 22, 150);
             // TODO: Add your initialization logic here
 
             pongball = new Sprite(this, "ball", spriteBatch, new Vector2(140, 0), new Vector2(150f, 150f));
