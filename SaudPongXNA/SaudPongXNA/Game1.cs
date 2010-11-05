@@ -133,7 +133,7 @@ namespace SaudPongXNA
             {
                 pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
                 score1++;
-                pongball.Velocity = new Vector2(150f, 150f);   
+                pongball.Velocity = new Vector2(-150f, 150f);   
             }
 
             if (pongball.Position.X < 10)
