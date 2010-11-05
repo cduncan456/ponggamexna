@@ -21,9 +21,14 @@ namespace SaudPongXNA
     {
 
         #region Fields
+        
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Sprite paddle1, paddle2, pongball;
+        Player player1;
+        Player player2;
+        Paddle player1Paddle;
+        Paddle player2Paddle;
         #endregion
 
 
@@ -53,14 +58,23 @@ namespace SaudPongXNA
             // our components need a reference to this SpriteBatch, create it here 
             // instead of in LoadContent.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            player1Paddle = new Paddle(this, spriteBatch, "stick1");
+            player2Paddle = new Paddle(this, spriteBatch, "stick1");
             // TODO: Add your initialization logic here
-            pongball = new Sprite(this, "ball", spriteBatch, new Vector2(140,0) ,new Vector2(150f, 150f));
+
+            pongball = new Sprite(this, "ball", spriteBatch, new Vector2(140, 0), new Vector2(150f, 150f));
             Components.Add(pongball);
-            paddle1 = new Sprite(this, "stick1", spriteBatch, new Vector2(10,0));
-            Components.Add(paddle1);
-            paddle2 = new Sprite(this, "stick1", spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width - 22, 150));
-            Components.Add(paddle2);
+            //paddle1 = new Sprite(this, "stick1", spriteBatch, new Vector2(10, 0));
+            //Components.Add(paddle1);
+            //paddle2 = new Sprite(this, "stick1", spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width - 22, 150));
+            //Components.Add(paddle2);
+            //
+            player1 = new Player(player1Paddle, Keys.W, Keys.S);
+            player2 = new Player(player2Paddle, Keys.Up, Keys.Down);
+            
+            Components.Add(player1Paddle.GetPaddle());
+            Components.Add(player2Paddle.GetPaddle());
+            //
             base.Initialize();
         }
 
@@ -95,24 +109,27 @@ namespace SaudPongXNA
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            KeyboardState currentKey = Keyboard.GetState();
-            if (currentKey.IsKeyDown(Keys.W))
-            {
-                paddle1.setPositionY(paddle1.getPositionY() - 5);
-            }
-            else if (currentKey.IsKeyDown(Keys.S))
-            {
-                paddle1.setPositionY(paddle1.getPositionY() + 5);
-            }
+            player1.SetKeyboardState();
+            player2.SetKeyboardState();
+            //   
+            //KeyboardState currentKey = player1.GetKeyBoardState();
+            //if (currentKey.IsKeyDown(Keys.W))
+            //{
+            //    paddle1.setPositionY(paddle1.getPositionY() - 5);
+            //}
+            //else if (currentKey.IsKeyDown(Keys.S))
+            //{
+            //    paddle1.setPositionY(paddle1.getPositionY() + 5);
+            //}
 
-            if (currentKey.IsKeyDown(Keys.Up))
-            {
-                paddle2.setPositionY(paddle2.getPositionY() - 5);
-            }
-            else if (currentKey.IsKeyDown(Keys.Down))
-            {
-                paddle2.setPositionY(paddle2.getPositionY() + 5);
-            }
+            //if (currentKey.IsKeyDown(Keys.Up))
+            //{
+            //    paddle2.setPositionY(paddle2.getPositionY() - 5);
+            //}
+            //else if (currentKey.IsKeyDown(Keys.Down))
+            //{
+            //    paddle2.setPositionY(paddle2.getPositionY() + 5);
+            //}
 
             int maximumX = graphics.GraphicsDevice.Viewport.Width - 22;
 
@@ -127,8 +144,10 @@ namespace SaudPongXNA
             }
 
             Rectangle pongRect = new Rectangle((int)pongball.getPositionX(), (int) pongball.getPositionY(),13,13);
-            Rectangle pad1Rect = new Rectangle((int)paddle1.getPositionX(), (int)paddle1.getPositionY(), 12, 65);
-            Rectangle pad2Rect = new Rectangle((int)paddle2.getPositionX(), (int)paddle2.getPositionY(), 12, 65);
+            Rectangle pad1Rect = new Rectangle((int)player1Paddle.GetPaddle().getPositionX(), (int)player1Paddle.GetPaddle().getPositionY(), 12, 65);
+            Rectangle pad2Rect = new Rectangle((int)player2Paddle.GetPaddle().getPositionX(), (int)player2Paddle.GetPaddle().getPositionY(), 12, 65);
+            //Rectangle pad1Rect = new Rectangle((int)paddle1.getPositionX(), (int)paddle1.getPositionY(), 12, 65);
+            //Rectangle pad2Rect = new Rectangle((int)paddle2.getPositionX(), (int)paddle2.getPositionY(), 12, 65);
 
 
             if (pongRect.Intersects(pad1Rect))
