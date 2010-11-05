@@ -41,3 +41,12 @@ U:\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\SpriteFont1.xnb
 U:\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.exe
 U:\Pong\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.pdb
 U:\Pong\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.exe
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\SaudPongXNA.pdb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
