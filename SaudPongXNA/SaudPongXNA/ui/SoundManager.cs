@@ -13,7 +13,6 @@ namespace SaudPongXNA
     public static class SoundManager
     {
         private static List<SoundEffect> matchSounds = new List<SoundEffect>();
-        //private static int soundCount = 4;
         private static SoundEffect groundBounce;
         private static SoundEffect paddleBounce;
         private static SoundEffect applause;
@@ -47,8 +46,16 @@ namespace SaudPongXNA
 
         public static void PlayApplause()
         {
-            
+
+            try
+            {
                 applause.Play();
+            }
+            catch
+            {
+                Debug.Write("PlayApplause() Failed");
+            }
+            
            
         }
 
