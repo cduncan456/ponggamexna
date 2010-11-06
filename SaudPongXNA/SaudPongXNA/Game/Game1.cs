@@ -28,11 +28,6 @@ namespace SaudPongXNA
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Sprite paddle1, paddle2, pongball;
-        SpriteFont font1;
-        Vector2 FontPos;
-        Vector2 FontPos2;
-        int score1 = 0;
-        int score2 = 0;
         
         #endregion
 
@@ -138,20 +133,21 @@ namespace SaudPongXNA
             if (pongball.Position.X > maximumX)
             {
                 pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
+                //add to the score of the player in the 1 position
                 ScoreBoard.AddToScore1();
                 pongball.Velocity = new Vector2(-150f, 150f);
                 //play the applause effect when the ball hits the bounds
                 SoundManager.PlayApplause();
-                //score1++;
-                //applause.Play();
+                
             }
 
             if (pongball.Position.X < 10)
             {
                 
                 pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
+                //add to the score of the player in the 2 position
                 ScoreBoard.AddToScore2();
-                // score2++;
+                
                 pongball.Velocity = new Vector2(150f, 150f);
                 //play the applause effect when the ball hits the bounds
                 SoundManager.PlayApplause();
@@ -206,11 +202,6 @@ namespace SaudPongXNA
 
             // Draw the sprites.
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            //string output = score1.ToString();
-            //string output2 = score2.ToString();
-            //Vector2 FontOrigin = font1.MeasureString(output) / 2;
-            //spriteBatch.DrawString(font1, output, FontPos, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
-            //spriteBatch.DrawString(font1, output2, FontPos2, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
             ScoreBoard.DrawScoreBoard(spriteBatch);
 
             // ensure game components' Draw methods get called between the SpriteBatch
