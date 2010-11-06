@@ -107,7 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SoundManager.cs" />
+    <Compile Include="ui\SoundManager.cs" />
     <Compile Include="ui\Ball.cs" />
     <Compile Include="ui\Paddle.cs" />
     <Compile Include="ui\Player.cs" />

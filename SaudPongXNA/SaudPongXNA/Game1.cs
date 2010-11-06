@@ -33,7 +33,6 @@ namespace SaudPongXNA
         Vector2 FontPos2;
         int score1 = 0;
         int score2 = 0;
-        SoundEffect applause, groundBounce, paddleBounce;
         
         #endregion
 
@@ -82,11 +81,12 @@ namespace SaudPongXNA
         protected override void LoadContent()
         {
             // TODO: use this.Content to load your game content here
-            SoundManager.Initialize(Content);
+            
             // method left for context
             font1 = Content.Load<SpriteFont>("SpriteFont1");
             FontPos = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) - 20f, 25);
             FontPos2 = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) + 20f, 25);
+            SoundManager.Initialize(Content);
             
 
         }
@@ -108,9 +108,6 @@ namespace SaudPongXNA
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            applause = Content.Load<SoundEffect>(@"Sounds/applause");
-            paddleBounce = Content.Load<SoundEffect>(@"Sounds/paddleBounce");
-            groundBounce = Content.Load<SoundEffect>(@"Sounds/groundBounce");
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
@@ -143,7 +140,8 @@ namespace SaudPongXNA
                 score1++;
                 pongball.Velocity = new Vector2(-150f, 150f);
                 //play the applause effect when the ball hits the bounds
-                applause.Play();
+                SoundManager.PlayApplause();
+                //applause.Play();
             }
 
             if (pongball.Position.X < 10)
@@ -153,37 +151,34 @@ namespace SaudPongXNA
                 score2++;
                 pongball.Velocity = new Vector2(150f, 150f);
                 //play the applause effect when the ball hits the bounds
-                applause.Play();
+                SoundManager.PlayApplause();
             }
 
             if (pongball.Position.Y < 1)
             {
-                groundBounce.Play();
+                SoundManager.PlayGroundBounce();
             }
             int h = graphics.GraphicsDevice.Viewport.Height;
             if (pongball.Position.Y >  graphics.GraphicsDevice.Viewport.Height - 14)
             {
-                groundBounce.Play();
+                SoundManager.PlayGroundBounce();
             }
 
             Rectangle pongRect = new Rectangle((int)pongball.Position.X, (int) pongball.Position.Y,13,13);
             Rectangle pad1Rect = new Rectangle((int)paddle1.Position.X, (int)paddle1.Position.Y, 12, 65);
             Rectangle pad2Rect = new Rectangle((int)paddle2.Position.X, (int)paddle2.Position.Y, 12, 65);
-            Rectangle screenTop   = new Rectangle(graphics.GraphicsDevice.Viewport.X, graphics.GraphicsDevice.Viewport.Y,
-                graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height);
-            Rectangle screenBottom = new Rectangle (10, 10, graphics.GraphicsDevice.Viewport.Width,graphics.GraphicsDevice.Viewport.Height );
-            
+           
 
             if (pongRect.Intersects(pad1Rect))
             {
-                paddleBounce.Play();
+                SoundManager.PlayPaddleBounce();
                 pongball.Velocity *= new Vector2(-1.2f, 1.2f);
                 paddle1.Velocity *= new Vector2(-1.2f, 1.2f);
             }
 
             if (pongRect.Intersects(pad2Rect))
             {
-                paddleBounce.Play();
+                SoundManager.PlayPaddleBounce();
                 pongball.Velocity *= new Vector2(-1.2f, 1.2f);
                 paddle2.Velocity *= new Vector2(-1.2f, 1.2f);
                 
