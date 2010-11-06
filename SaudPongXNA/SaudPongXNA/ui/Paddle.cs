@@ -9,30 +9,10 @@ namespace SaudPongXNA.ui
 {
     class Paddle
     {
-        private Sprite paddle;
-        private Vector2 position;
-
-        public Paddle(Game game, SpriteBatch spriteBatch, string paddleName, float xPosition, float yPosition)
+        public static Sprite createPaddle(Game game, SpriteBatch batch, Vector2 initialPosition)
         {
-            position.X = xPosition;
-            position.Y = yPosition;
-            paddle = new Sprite(game, paddleName, spriteBatch, new Vector2(xPosition, yPosition));
+            Sprite sprite = new Sprite(game, "Images/stick1", batch, initialPosition);
+            return sprite;
         }
-
-        public Sprite GetPaddle()
-        {
-            return this.paddle;
-        }
-
-        public void setPositionY(float value)
-        {
-            position.Y = value;
-        }
-
-        public float getPositionY()
-        {
-            return position.Y;
-        }
-        
     }
 }

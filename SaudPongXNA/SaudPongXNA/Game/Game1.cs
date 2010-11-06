@@ -28,7 +28,9 @@ namespace SaudPongXNA
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Sprite paddle1, paddle2, pongball;
-        
+
+
+
         #endregion
 
 
@@ -60,11 +62,13 @@ namespace SaudPongXNA
             spriteBatch = new SpriteBatch(GraphicsDevice);
             
             // TODO: Add your initialization logic here
-            pongball = new Sprite(this, "Images/ball", spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2), new Vector2(150f, 150f));
+            
+            paddle1 = Paddle.createPaddle(this, spriteBatch, new Vector2(10, 0));
+            paddle2 = Paddle.createPaddle(this, spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width - 22, 150));
+            pongball = PongBall.createPongBall(this, spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2), new Vector2(150f, 150f));
+
             Components.Add(pongball);
-            paddle1 = new Sprite(this, "Images/stick1", spriteBatch, new Vector2(10,0));
             Components.Add(paddle1);
-            paddle2 = new Sprite(this, "Images/stick1", spriteBatch, new Vector2(graphics.GraphicsDevice.Viewport.Width - 22, 150));
             Components.Add(paddle2);
             base.Initialize();
         }
@@ -78,9 +82,7 @@ namespace SaudPongXNA
             // TODO: use this.Content to load your game content here
             
             // method left for context
-            //font1 = Content.Load<SpriteFont>("Fonts/SpriteFont1");
-            //FontPos = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) - 20f, 25);
-            //FontPos2 = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) + 20f, 25);
+
             SoundManager.Initialize(Content);
             ScoreBoard.Initialize(this, spriteBatch, Content);
             
