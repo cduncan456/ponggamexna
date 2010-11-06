@@ -9,15 +9,21 @@ using Microsoft.Xna.Framework.Content;
 
 namespace SaudPongXNA
 {
-    
+    /// <summary>
+    /// The SoundManager class handles all the sound effects in the game.
+    /// </summary>
     public static class SoundManager
     {
-        private static List<SoundEffect> matchSounds = new List<SoundEffect>();
+        #region Fields
         private static SoundEffect groundBounce;
         private static SoundEffect paddleBounce;
         private static SoundEffect applause;
-       
-
+        #endregion
+        #region Construction
+        /// <summary>
+        /// Used the ContentManager to load SoundEffect Objects
+        /// </summary>
+        /// <param name="content">The content pipeline to use for the SoundManager</param>
         public static void Initialize(ContentManager content)
         {
             try
@@ -31,7 +37,10 @@ namespace SaudPongXNA
                 Debug.Write("SoundManager Initialization Failed");
             }
         }
-
+        
+        /// <summary>
+        /// Plays the sound of a ball bouncing on the ground.
+        /// </summary>
         public static void PlayGroundBounce()
         {
             try
@@ -43,7 +52,11 @@ namespace SaudPongXNA
                 Debug.Write("PlayGroundBounce() Failed");
             }
         }
-
+        #endregion
+        #region Methods
+        /// <summary>
+        /// Plays the sound of a crowd applause
+        /// </summary>
         public static void PlayApplause()
         {
 
@@ -58,7 +71,9 @@ namespace SaudPongXNA
             
            
         }
-
+        /// <summary>
+        /// Plays the sound of a ball bouncing off the paddle
+        /// </summary>
         public static void PlayPaddleBounce()
         {
             try
@@ -72,7 +87,6 @@ namespace SaudPongXNA
         }
 
 
-
-
+        #endregion
     }
 }
