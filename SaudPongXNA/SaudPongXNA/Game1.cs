@@ -135,6 +135,7 @@ namespace SaudPongXNA
             }
 
             int maximumX = graphics.GraphicsDevice.Viewport.Width - 22;
+            int maximumY = graphics.GraphicsDevice.Viewport.Height;
 
             if (pongball.Position.X > maximumX)
             {
@@ -147,6 +148,7 @@ namespace SaudPongXNA
 
             if (pongball.Position.X < 10)
             {
+                
                 pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
                 score2++;
                 pongball.Velocity = new Vector2(150f, 150f);
@@ -154,17 +156,28 @@ namespace SaudPongXNA
                 applause.Play();
             }
 
+            if (pongball.Position.Y < 1)
+            {
+                groundBounce.Play();
+            }
+
+            if (pongball.Position.Y > 465)
+            {
+                groundBounce.Play();
+            }
+
             Rectangle pongRect = new Rectangle((int)pongball.Position.X, (int) pongball.Position.Y,13,13);
             Rectangle pad1Rect = new Rectangle((int)paddle1.Position.X, (int)paddle1.Position.Y, 12, 65);
             Rectangle pad2Rect = new Rectangle((int)paddle2.Position.X, (int)paddle2.Position.Y, 12, 65);
-
+            Rectangle screenTop   = new Rectangle(graphics.GraphicsDevice.Viewport.X, graphics.GraphicsDevice.Viewport.Y,
+                graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height);
+            Rectangle screenBottom = new Rectangle (10, 10, graphics.GraphicsDevice.Viewport.Width,graphics.GraphicsDevice.Viewport.Height );
+            
 
             if (pongRect.Intersects(pad1Rect))
             {
                 paddleBounce.Play();
                 pongball.Velocity *= new Vector2(-1.2f, 1.2f);
-                
-
             }
 
             if (pongRect.Intersects(pad2Rect))
@@ -173,6 +186,8 @@ namespace SaudPongXNA
                 pongball.Velocity *= new Vector2(-1.2f, 1.2f);
                 
             }
+
+           
 
             // TODO: Add your update logic here (comment left for context)
 
