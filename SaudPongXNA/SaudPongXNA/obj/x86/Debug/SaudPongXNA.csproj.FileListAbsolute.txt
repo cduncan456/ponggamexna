@@ -62,3 +62,6 @@ C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Resolv
 C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.exe
 C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPongXNA.pdb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Images\stick1.xnb
+C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Fonts\SpriteFont1.xnb

@@ -2,40 +2,13 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>ball.png</Source>
-      <Name>ball</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb</Output>
-      <Time>2010-11-05T21:11:35.7660468-04:00</Time>
-    </Item>
-    <Item>
-      <Source>stick1.png</Source>
-      <Name>stick1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb</Output>
-      <Time>2010-11-05T21:11:35.7890468-04:00</Time>
-    </Item>
-    <Item>
-      <Source>SpriteFont1.spritefont</Source>
-      <Name>SpriteFont1</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
-      <Time>2010-11-05T21:11:35.7630468-04:00</Time>
-    </Item>
-    <Item>
       <Source>Sounds\applause.WAV</Source>
       <Name>Sounds\applause</Name>
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\applause.xnb</Output>
-      <Time>2010-11-05T21:11:35.7490468-04:00</Time>
+      <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\applause.xnb</Output>
+      <Time>2010-11-05T17:32:28.9326073-04:00</Time>
     </Item>
     <Item>
       <Source>Sounds\groundBounce.wav</Source>
@@ -43,8 +16,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\groundBounce.xnb</Output>
-      <Time>2010-11-05T21:11:35.7540468-04:00</Time>
+      <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\groundBounce.xnb</Output>
+      <Time>2010-11-05T20:18:11.1362689-04:00</Time>
     </Item>
     <Item>
       <Source>Sounds\paddleBounce.wav</Source>
@@ -52,8 +25,35 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\paddleBounce.xnb</Output>
-      <Time>2010-11-05T21:11:35.7590468-04:00</Time>
+      <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\paddleBounce.xnb</Output>
+      <Time>2010-11-05T17:22:48.3854019-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\ball.png</Source>
+      <Name>Images\ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Images\ball.xnb</Output>
+      <Time>2010-11-05T21:32:56.8528372-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\stick1.png</Source>
+      <Name>Images\stick1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Images\stick1.xnb</Output>
+      <Time>2010-11-05T21:32:56.8578375-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\SpriteFont1.spritefont</Source>
+      <Name>Fonts\SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Fonts\SpriteFont1.xnb</Output>
+      <Time>2010-11-05T21:32:56.8468368-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -61,39 +61,39 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNAContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNAContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNAContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2010-10-14T16:56:27.7334154-04:00</Value>
+        <Value>2010-10-30T21:02:56.7218718-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
