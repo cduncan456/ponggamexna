@@ -83,10 +83,11 @@ namespace SaudPongXNA
             // TODO: use this.Content to load your game content here
             
             // method left for context
-            font1 = Content.Load<SpriteFont>("Fonts/SpriteFont1");
-            FontPos = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) - 20f, 25);
-            FontPos2 = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) + 20f, 25);
+            //font1 = Content.Load<SpriteFont>("Fonts/SpriteFont1");
+            //FontPos = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) - 20f, 25);
+            //FontPos2 = new Vector2((graphics.GraphicsDevice.Viewport.Width / 2) + 20f, 25);
             SoundManager.Initialize(Content);
+            ScoreBoard.Initialize(this, spriteBatch, Content);
             
 
         }
@@ -137,10 +138,11 @@ namespace SaudPongXNA
             if (pongball.Position.X > maximumX)
             {
                 pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
-                score1++;
+                ScoreBoard.AddToScore1();
                 pongball.Velocity = new Vector2(-150f, 150f);
                 //play the applause effect when the ball hits the bounds
                 SoundManager.PlayApplause();
+                //score1++;
                 //applause.Play();
             }
 
@@ -148,7 +150,8 @@ namespace SaudPongXNA
             {
                 
                 pongball.Position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2);
-                score2++;
+                ScoreBoard.AddToScore2();
+                // score2++;
                 pongball.Velocity = new Vector2(150f, 150f);
                 //play the applause effect when the ball hits the bounds
                 SoundManager.PlayApplause();
@@ -203,12 +206,12 @@ namespace SaudPongXNA
 
             // Draw the sprites.
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            string output = score1.ToString();
-            string output2 = score2.ToString();
-            Vector2 FontOrigin = font1.MeasureString(output) / 2;
-            spriteBatch.DrawString(font1, output, FontPos, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
-            spriteBatch.DrawString(font1, output2, FontPos2, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
-
+            //string output = score1.ToString();
+            //string output2 = score2.ToString();
+            //Vector2 FontOrigin = font1.MeasureString(output) / 2;
+            //spriteBatch.DrawString(font1, output, FontPos, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
+            //spriteBatch.DrawString(font1, output2, FontPos2, Color.Gray, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
+            ScoreBoard.DrawScoreBoard(spriteBatch);
 
             // ensure game components' Draw methods get called between the SpriteBatch
             // Begin and End
