@@ -160,8 +160,8 @@ namespace SaudPongXNA
             {
                 groundBounce.Play();
             }
-
-            if (pongball.Position.Y > 465)
+            int h = graphics.GraphicsDevice.Viewport.Height;
+            if (pongball.Position.Y >  graphics.GraphicsDevice.Viewport.Height - 14)
             {
                 groundBounce.Play();
             }
@@ -178,12 +178,14 @@ namespace SaudPongXNA
             {
                 paddleBounce.Play();
                 pongball.Velocity *= new Vector2(-1.2f, 1.2f);
+                paddle1.Velocity *= new Vector2(-1.2f, 1.2f);
             }
 
             if (pongRect.Intersects(pad2Rect))
             {
                 paddleBounce.Play();
                 pongball.Velocity *= new Vector2(-1.2f, 1.2f);
+                paddle2.Velocity *= new Vector2(-1.2f, 1.2f);
                 
             }
 
