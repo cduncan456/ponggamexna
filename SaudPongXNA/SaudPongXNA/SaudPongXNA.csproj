@@ -107,6 +107,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ui\Paddle.cs" />
+    <Compile Include="ui\PongBall.cs" />
     <Compile Include="ui\ScoreBoard.cs" />
     <Compile Include="ui\SoundManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

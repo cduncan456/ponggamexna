@@ -50,9 +50,6 @@ C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\ob
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\applause.xnb
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\groundBounce.xnb
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\paddleBounce.xnb
-C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\ball.xnb
-C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\stick1.xnb
-C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\SpriteFont1.xnb
 C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\applause.xnb
 C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\groundBounce.xnb
 C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Sounds\paddleBounce.xnb
@@ -65,3 +62,6 @@ C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\obj\x86\Debug\SaudPo
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Images\ball.xnb
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Images\stick1.xnb
 C:\Users\Sedrick L. Strozier\Desktop\VSProjects\PONG4\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Fonts\SpriteFont1.xnb
+C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Images\stick1.xnb
+C:\Users\smalik2\Desktop\New folder\SaudPongXNA\SaudPongXNA\bin\x86\Debug\Content\Fonts\SpriteFont1.xnb

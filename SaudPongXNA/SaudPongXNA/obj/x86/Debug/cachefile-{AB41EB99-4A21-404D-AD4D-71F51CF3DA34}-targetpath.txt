@@ -1,6 +1,6 @@
-Content\Sounds\applause.xnb
-Content\Sounds\groundBounce.xnb
-Content\Sounds\paddleBounce.xnb
 Content\Images\ball.xnb
 Content\Images\stick1.xnb
 Content\Fonts\SpriteFont1.xnb
+Content\Sounds\applause.xnb
+Content\Sounds\groundBounce.xnb
+Content\Sounds\paddleBounce.xnb
